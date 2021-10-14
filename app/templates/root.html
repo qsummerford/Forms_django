@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <form>
+      {{ form.as_p}}
+      <button>spunch bob</button>
+    </form>
+    {% if sent is not None %}
+    <p>{{sent}}</p>
+    {% endif %} {% if x is not None or y is not None %}
+    <p>{{answer}}</p>
+    {% endif %} {% if burger is not None %}
+    <p>{{total}}</p>
+    {% endif %}
+  </body>
+</html>
